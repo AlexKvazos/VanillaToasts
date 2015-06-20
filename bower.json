@@ -1,0 +1,30 @@
+{
+  "name": "vanillatoasts",
+  "main": "vanillatoasts.js",
+  "version": "1.0.0",
+  "authors": [
+    "AlexKvazos <contact@alexkvazos.com>"
+  ],
+  "description": "Agnostic Javascript Library for Website Notifications",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "agnostic",
+    "javascript",
+    "toast",
+    "notification",
+    "library"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/AlexKvazos/VanillaToasts",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html"
+  ]
+}

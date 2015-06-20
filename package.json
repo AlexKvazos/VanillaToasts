@@ -1,0 +1,25 @@
+{
+  "name": "vanillatoasts",
+  "version": "1.0.0",
+  "description": "Agnostic Javascript Library for Website Notifications",
+  "main": "vanillatoasts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKvazos/VanillaToasts.git"
+  },
+  "keywords": [
+    "javascript",
+    "agnostic",
+    "notifications",
+    "library"
+  ],
+  "author": "AlexKvazos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexKvazos/VanillaToasts/issues"
+  },
+  "homepage": "https://github.com/AlexKvazos/VanillaToasts#readme"
+}
