@@ -1,10 +1,14 @@
 (function(root, factory) {
-  // commonjs
-  if (typeof exports === 'object') {
-    module.exports = factory();
-  // global
-  } else {
-    root.VanillaToasts = factory();
+  try {
+    // commonjs
+    if (typeof exports === 'object') {
+      module.exports = factory();
+    // global
+    } else {
+      root.VanillaToasts = factory();
+    }
+  } catch(error) {
+    console.log('Isomorphic compatibility is not supported at this time for VanillaToasts.')
   }
 })(this, function() {
 
