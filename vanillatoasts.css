@@ -26,7 +26,8 @@
   animation-fill-mode: forwards;
 }
 
-#vanillatoasts-container p, h4 {
+#vanillatoasts-container p,
+#vanillatoasts-container h4 {
   margin: 3px 0!important;
 }
 
