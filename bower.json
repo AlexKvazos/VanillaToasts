@@ -1,6 +1,9 @@
 {
   "name": "vanillatoasts",
-  "main": "vanillatoasts.js",
+  "main": [
+    "vanillatoasts.js",
+    "vanillatoasts.css"
+  ],
   "version": "1.0.1",
   "authors": [
     "AlexKvazos <contact@alexkvazos.com>"
