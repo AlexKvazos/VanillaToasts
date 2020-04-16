@@ -2,6 +2,7 @@
   position: fixed;
   width: 320px;
   font-family: 'Helvetica';
+  pointer-events: none;
 }
 .toasts-top-right{
   top: 0;
@@ -42,6 +43,7 @@
   animation-duration:  .3s;
   animation-name: VanillaToasts;
   animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  pointer-events: all;
 }
 
 .vanillatoasts-fadeOut {
