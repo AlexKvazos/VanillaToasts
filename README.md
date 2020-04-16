@@ -39,3 +39,24 @@ toast.hide()
 VanillaToasts.setTimeout(toast.id, 1000);
 
 ```
+
+## Positioning the toast
+To set a different position for the toast, use the `positionClass` property on the options of VanillaToast.
+
+```
+// Create a toast
+let toast = VanillaToasts.create({
+  title: 'Welcome to my site',
+  text: 'This toast will hide after 5000ms or when you click it',
+  positionClass: 'bottomLeft'
+});
+
+```
+
+You can use any of the following values for the `positionClass` property:
+* topRight
+* topLeft
+* topCenter
+* bottomRight
+* bottomLeft
+* bottomCenter

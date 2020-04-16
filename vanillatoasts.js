@@ -1,16 +1,16 @@
-(function(root, factory) {
+(function (root, factory) {
   try {
     // commonjs
     if (typeof exports === 'object') {
       module.exports = factory();
-    // global
+      // global
     } else {
       root.VanillaToasts = factory();
     }
-  } catch(error) {
+  } catch (error) {
     console.log('Isomorphic compatibility is not supported at this time for VanillaToasts.')
   }
-})(this, function() {
+})(this, function () {
 
   // We need DOM to be ready
   if (document.readyState === 'complete') {
@@ -22,14 +22,14 @@
   // Create VanillaToasts object
   VanillaToasts = {
     // In case toast creation is attempted before dom has finished loading!
-    create: function() {
+    create: function () {
       console.error([
         'DOM has not finished loading.',
         '\tInvoke create method when DOM\s readyState is complete'
       ].join('\n'))
     },
     //function to manually set timeout after create
-    setTimeout: function() {
+    setTimeout: function () {
       console.error([
         'DOM has not finished loading.',
         '\tInvoke create method when DOM\s readyState is complete'
@@ -48,7 +48,7 @@
 
     // @Override
     // Replace create method when DOM has finished loading
-    VanillaToasts.create = function(options) {
+    VanillaToasts.create = function (options) {
       var toast = document.createElement('div');
       toast.id = ++autoincrement;
       toast.id = 'toast-' + toast.id;
@@ -78,13 +78,39 @@
         toast.appendChild(img);
       }
 
+      // position
+      var position = options.positionClass
+      switch (position) {
+        case 'topLeft':
+          container.classList.add('toasts-top-left');
+          break;
+        case 'bottomLeft':
+          container.classList.add('toasts-bottom-left');
+          break;
+        case 'bottomRight':
+          container.classList.add('toasts-bottom-right');
+          break;
+        case 'topRight':
+          container.classList.add('toasts-top-right');
+          break;
+        case 'topCenter':
+          container.classList.add('toasts-top-center');
+          break;
+        case 'bottomCenter':
+          container.classList.add('toasts-bottom-center');
+          break;
+        default:
+          container.classList.add('toasts-top-right');
+          break;
+      }
+
       // click callback
       if (typeof options.callback === 'function') {
         toast.addEventListener('click', options.callback);
       }
 
       // toast api
-      toast.hide = function() {
+      toast.hide = function () {
         toast.className += ' vanillatoasts-fadeOut';
         toast.addEventListener('animationend', removeToast, false);
       };
@@ -120,8 +146,8 @@
     because we don't want it to start to timeout until
     we tell it to
     */
-    VanillaToasts.setTimeout = function(toastid, val) {
-      if(VanillaToasts.toasts[toastid]){
+    VanillaToasts.setTimeout = function (toastid, val) {
+      if (VanillaToasts.toasts[toastid]) {
         setTimeout(VanillaToasts.toasts[toastid].hide, val);
       }
     }

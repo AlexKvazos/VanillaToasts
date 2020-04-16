@@ -1,11 +1,36 @@
 #vanillatoasts-container {
   position: fixed;
-  top: 0;
-  right: 0;
   width: 320px;
   font-family: 'Helvetica';
 }
-
+.toasts-top-right{
+  top: 0;
+  right: 0;
+}
+.toasts-top-left{
+  left:0;
+  top:0;
+}
+.toasts-bottom-left{
+  left: 0;
+  bottom:0;
+}
+.toasts-bottom-right{
+  bottom:0;
+  right: 0;
+}
+.toasts-top-center{
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.toasts-bottom-center{
+  bottom:0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .vanillatoasts-toast {
   position: relative;
   padding: 20px 17px;
