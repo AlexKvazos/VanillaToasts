@@ -13,7 +13,7 @@ $ npm install vanillatoasts
 var VanillaToasts = require('vanillatoasts');
 ```
 
-Don't forget to include the CSS file!
+Do not forget to include the CSS file!
 ```
  <link rel="stylesheet" href="/path/to/vanillatoasts/vanillatoasts.css">
 ```
