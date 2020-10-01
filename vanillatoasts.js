@@ -8,7 +8,7 @@
       root.VanillaToasts = factory();
     }
   } catch (error) {
-    console.log('Isomorphic compatibility is not supported at this time for VanillaToasts.')
+    console.log('Isomorphic compatibility is not supported at this time for VanillaToasts.');
   }
 })(this, function () {
 
