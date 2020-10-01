@@ -1,3 +1,5 @@
+#Amazing project of Toasts
+
 ![VanillaToasts](http://puu.sh/iwxpd/eeee838c88.png)
 -------
 
