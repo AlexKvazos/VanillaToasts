@@ -60,3 +60,6 @@ You can use any of the following values for the `positionClass` property:
 * bottomRight
 * bottomLeft
 * bottomCenter
+
+
+Visit Us - An Amazing Website
