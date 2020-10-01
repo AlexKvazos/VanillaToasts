@@ -40,7 +40,7 @@ VanillaToasts.setTimeout(toast.id, 1000);
 
 ```
 
-## Positioning the toast
+## Positioning the Toast
 To set a different position for the toast, use the `positionClass` property on the options of VanillaToast.
 
 ```
