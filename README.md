@@ -1,4 +1,4 @@
-![VanillaToasts](http://puu.sh/iwxpd/eeee838c88.png)
+vanillatoast website
 -------
 
 Create toasts & notifications on your website with ease. This library is extremely lightweight and depends on no other library. Simply load the script and css to your page, and use the simple API to start launching toasts on your page.
