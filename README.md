@@ -1,7 +1,7 @@
 ![VanillaToasts](http://puu.sh/iwxpd/eeee838c88.png)
 -------
 
-Create toasts & notifications on your website with ease. This library is extremely lightweight and depends on no other library. Simply load the script and css to your page, and use the simple API to start launching toasts on your page.
+Create toasts & notifications on your website with ease. This library is extremely lightweight and doesn't depend on any other library. Simply load the script and css to your page, and use the simple API to start launching toasts on your page.
 
 Check it out: http://alexkvazos.github.io/VanillaToasts/
 
@@ -41,7 +41,7 @@ VanillaToasts.setTimeout(toast.id, 1000);
 ```
 
 ## Positioning the toast
-To set a different position for the toast, use the `positionClass` property on the options of VanillaToast.
+To set a different position for the toast, use the `positionClass` property in the options of VanillaToast.
 
 ```
 // Create a toast
