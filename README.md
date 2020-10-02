@@ -21,7 +21,6 @@ Don't forget to include the CSS file!
 # Usage
 
 ```
-
 // Create a toast
 let toast = VanillaToasts.create({
   title: 'Welcome to my site',
@@ -38,9 +37,9 @@ toast.hide()
 // Timeout a toast at a later time
 VanillaToasts.setTimeout(toast.id, 1000);
 
-```
 
-## Positioning the toast
+```
+# Positioning the toast
 To set a different position for the toast, use the `positionClass` property on the options of VanillaToast.
 
 ```
