@@ -1,7 +1,7 @@
 ![VanillaToasts](http://puu.sh/iwxpd/eeee838c88.png)
 -------
 
-Create toasts & notifications on your website with ease. This library is extremely lightweight and depends on no other library. Simply load the script and css to your page, and use the simple API to start launching toasts on your page.
+Create toasts & notifications on your website with ease. This library is extremely lightweight and depend on no other libraries. Simply load the script and CSS to your page, and use the simple API to start launching toasts on your page.
 
 Check it out: http://alexkvazos.github.io/VanillaToasts/
 
@@ -13,7 +13,7 @@ $ npm install vanillatoasts
 var VanillaToasts = require('vanillatoasts');
 ```
 
-Don't forget to include the CSS file!
+Do not forget to include the CSS file!
 ```
  <link rel="stylesheet" href="/path/to/vanillatoasts/vanillatoasts.css">
 ```
@@ -53,7 +53,7 @@ let toast = VanillaToasts.create({
 
 ```
 
-You can use any of the following values for the `positionClass` property:
+We can use any of the following values for the `positionClass` property:
 * topRight
 * topLeft
 * topCenter
