@@ -1,7 +1,7 @@
 <html>
   <head>
-    <title>VanillaToasts - Agnostic Javascript Library for Website Notifications</title>
-    <script src="vanillatoasts.js"></script>
+    <title>Vanillatoasts - Agnostic Javascript Library for Website Notifications</title>
+    <script src="vanillaToasts.js"></script>
     <link href="vanillatoasts.css" rel="stylesheet"></script>
     <link href='http://fonts.googleapis.com/css?family=Lobster|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -200,17 +200,17 @@ Author: pumbur <pumbur@pumbur.net>
           <div class="row">
             <div class="col-md-2">
               <label>Title</label>
-              <input name="title" type="text" class="form-control" value="GitHub">
+              <input name="title" type="text" class="form-control" value="GitHub profile ">
             </div>
             <div class="col-md-8">
               <label>Text</label>
-              <input name="text" type="text" class="form-control" value="Welcome to the VanillaToasts demo!">
+              <input name="text" type="text" class="form-control" value="Welcome to the VanillaToasts demonstration!">
             </div>
             <div class="col-md-2">
               <label>Type</label>
               <select name="type" class="form-control">
                 <option value="">-</option>
-                <option selected value="success">success</option>
+                <option selected value="Gotsuccess">Gotsuccess</option>
                 <option value="info">info</option>
                 <option value="warning">warning</option>
                 <option value="error">error</option>
@@ -226,7 +226,7 @@ Author: pumbur <pumbur@pumbur.net>
           <div class="row" style="margin-top:20px">
             <div class="col-md-3">
               <label>Timeout (Optional)</label>
-              <input type="number" name="timeout" value="4500" class="form-control">
+              <input type="number" name="timeout" value="5500" class="form-control">
             </div>
           </div>
           <hr>
@@ -239,9 +239,9 @@ Author: pumbur <pumbur@pumbur.net>
         <div class="well">
           <h3>Documentation</h3>
           <hr>
-          <h4>Installing</h4>
+          <h4>Installing-via</h4>
           <br>
-          <p>Using NPM</p>
+          <p>Using Npm</p>
           <pre><code class="javascript">
   $ npm install vanillatoasts
 
@@ -255,7 +255,7 @@ Author: pumbur <pumbur@pumbur.net>
   &lt;script src=&quot;/bower_components/vanillatoasts/VanillaToasts.js&quot;&gt;&lt;/script&gt;
           </code></pre>
           <br>
-          <p>Do not forget to include the CSS file on your site!</p>
+          <p>**Do not forget to include that CSS file on your website**</p>
           <pre><code class="html">
   &lt;link rel=&quot;stylesheet&quot; href=&quot;/bower_components/vanillatoasts/vanillatoasts.css&quot;&gt;
           </code></pre>
@@ -263,9 +263,9 @@ Author: pumbur <pumbur@pumbur.net>
           <h4>Usage</h4><br>
           <pre><code class="javascript">
 VanillaToasts.create({
-  title: 'Welcome to my site',
-  text: 'This toast will hide after 5000ms or when you click it',
-  type: 'warning', // success, info, warning, error   / optional parameter
+  title: 'Welcome to my website',
+  text: 'This toast will hide after 5000ms or when you clicked on it',
+  type: 'warning', // got success, info, warning, error   / optional parameter
   icon: '/img/alert-icon.jpg', // optional parameter
   timeout: 5000 // hide after 5000ms, // optional parameter
   callback: function() { ... } // executed when toast is clicked / optional parameter
