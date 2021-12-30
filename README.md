@@ -29,6 +29,7 @@ let toast = VanillaToasts.create({
   type: 'warning', // success, info, warning, error   / optional parameter
   icon: '/img/alert-icon.jpg', // optional parameter
   timeout: 5000, // hide after 5000ms, // optional parameter
+  single: false, // show always single notification
   callback: function() { ... } // executed when toast is clicked / optional parameter
 });
 
