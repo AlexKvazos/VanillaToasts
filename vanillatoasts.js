@@ -77,6 +77,12 @@
         img.className = 'vanillatoasts-icon';
         toast.appendChild(img);
       }
+      
+      
+       if (options.onHide) {
+          // do something
+        }
+      }
 
       // position
       var position = options.positionClass
@@ -113,7 +119,19 @@
       toast.hide = function () {
         toast.className += ' vanillatoasts-fadeOut';
         toast.addEventListener('animationend', removeToast, false);
-      };
+        
+      if (options.onHide) {
+          options.onHide();
+        }
+      }
+    
+     // single
+      if (options.single === true) {
+          var elements = document.getElementsByClassName('vanillatoasts-toast');
+          while (elements.length > 0) {
+          elements[0].parentNode.removeChild(elements[0]);
+        }
+      }
 
       // autohide
       if (options.timeout) {
