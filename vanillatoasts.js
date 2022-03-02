@@ -77,6 +77,12 @@
         img.className = 'vanillatoasts-icon';
         toast.appendChild(img);
       }
+      
+      
+       if (options.onHide) {
+          // do something
+        }
+      }
 
       // position
       var position = options.positionClass
@@ -113,7 +119,11 @@
       toast.hide = function () {
         toast.className += ' vanillatoasts-fadeOut';
         toast.addEventListener('animationend', removeToast, false);
-      };
+        
+      if (options.onHide) {
+          options.onHide();
+        }
+      }
 
       // autohide
       if (options.timeout) {
