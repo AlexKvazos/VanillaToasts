@@ -53,6 +53,14 @@
       toast.id = ++autoincrement;
       toast.id = 'toast-' + toast.id;
       toast.className = 'vanillatoasts-toast';
+      
+      // single
+       if (options.single === true) {
+              var elements = document.getElementsByClassName('vanillatoasts-toast');
+              while (elements.length > 0) {
+                  elements[0].parentNode.removeChild(elements[0]);
+            }
+        }
 
       // title
       if (options.title) {
@@ -68,6 +76,10 @@
         p.className = 'vanillatoasts-text';
         p.innerHTML = options.text;
         toast.appendChild(p);
+      }
+      
+      if (options.onHide) {
+        // do something         
       }
 
       // icon
@@ -113,6 +125,10 @@
       toast.hide = function () {
         toast.className += ' vanillatoasts-fadeOut';
         toast.addEventListener('animationend', removeToast, false);
+        
+        if (options.onHide) {
+            options.onHide();
+        }
       };
 
       // autohide
