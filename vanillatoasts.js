@@ -124,6 +124,14 @@
           options.onHide();
         }
       }
+    
+     // single
+      if (options.single === true) {
+          var elements = document.getElementsByClassName('vanillatoasts-toast');
+          while (elements.length > 0) {
+          elements[0].parentNode.removeChild(elements[0]);
+        }
+      }
 
       // autohide
       if (options.timeout) {
