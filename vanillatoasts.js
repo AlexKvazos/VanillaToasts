@@ -82,7 +82,6 @@
        if (options.onHide) {
           // do something
         }
-      }
 
       // position
       var position = options.positionClass
